@@ -7,14 +7,16 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 @SpringBootApplication
-@EnableOAuth2Sso
-public class MyewebApplication extends WebSecurityConfigurerAdapter{
+//@EnableOAuth2Sso
+public class MyewebApplication 
+//extends WebSecurityConfigurerAdapter
+{
 
 	public static void main(String[] args) {
 		SpringApplication.run(MyewebApplication.class, args);
 	}
 	
-	 @Override
+	 /*@Override
 	    protected void configure(HttpSecurity http) throws Exception {
 
 	        http.antMatcher("/**")
@@ -24,5 +26,5 @@ public class MyewebApplication extends WebSecurityConfigurerAdapter{
 	                .anyRequest()
 	                .authenticated();
 
-	    }
+	    }*/
 }
